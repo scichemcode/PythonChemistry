@@ -1,0 +1,9 @@
+#code for interpreting Langmuir Adsorption isotherm
+k=0234.0 
+p=int(input('Enter the pressure limit'))
+for i in range (p):
+    t=(k*p)/(1+(k*p)) #Langmuir Adsorption
+    print (t)
+    x=p
+    y=t
+    p=p+1
